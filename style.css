@@ -1,0 +1,231 @@
+body{
+    background: #F3F5FC;
+}
+
+.logo{
+    position: absolute;
+    width: 120px;
+    margin: 24%;
+    margin: 2% 1% 2% 4%;
+}
+.titulo{
+    position: absolute;
+    margin-top: 10px;
+    color: #0A3871;
+    margin: 3% 1% 2% 20%;
+}
+
+main{
+    position: relative;
+    display: flex;
+    margin: 0.5% 1% 3% 20%;
+}
+
+.ingreso-mensaje-a-encriptar{
+    resize: none;
+    margin-top: 120px;
+    border-style: none;
+    background: transparent;
+    text-transform: lowercase;
+    font-family: 'Inter';
+    font-size: 24px;
+    color: #0A3871;
+   
+}
+/* display: flex permite desplazar los cuadros hacia los lados*/
+
+.ingreso-mensaje-a-encriptar{
+    outline: none;
+}
+
+.ingreso-mensaje-a-encriptar::placeholder{
+    color: #0A3871;
+}
+
+.indicaciones{
+    padding: 3%;
+    padding-left: 0%;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-size: 13px;
+}
+
+.logo-indicaciones{
+    width: 12px;
+    float: left;
+    margin: 0% 2% 1% 0%;
+    color: #0A3871;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.encriptar{
+    position: absolute;
+    height: 13%;
+    width: 17%;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background: #0A3871;
+    border: none;
+    border-radius: 8px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.desencriptar{
+    position: absolute;
+    margin-left: 20%;
+    height: 13%;
+    width: 17%;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background: #d6dbe2;
+    border: none;
+    border-radius: 8px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.mensaje-encriptado{
+    color: #0A3871;
+    position: absolute;
+    resize: none;
+    margin-top: 50px;
+    margin-left: 140px;
+    background-image: url("imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.mensaje-encriptado::placeholder{
+    color:#0A3871;
+    font-size: 20px;
+}
+
+
+.copiar{
+    position: absolute;
+    margin-top: 480px;
+    margin-left: 220px;
+    height: 13%;
+    width: 17%;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background: #d6dbe2;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+.volver{
+  position: absolute;
+  margin-top: 440px;
+  margin-left: 220px;
+  height: 13%;
+  width: 17%;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  background: #d6dbe2;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.footer-distribucion {
+  background-color: #0A3871;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 0px 0px 5px 130px;
+}
+
+.footer-distribucion .footer-izquierda p {
+  font-size: 15px;
+  margin: 0px;
+  margin-left: 150px;
+}
+
+.footer-distribucion p.footer-titulo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  transition: ease .25s;
+  display: inline-block;
+  line-height: 3;
+  text-decoration: none;
+  transition: ease .25s;
+}
+
+.autor{
+    color: #ffffff;
+    font-style: italic;
+}
+
+.footer-distribucion .footer-a-la-derecha {
+  float: right;
+  margin-top: 20px;
+  max-width: 180px;
+  margin-right: 260px;
+}
+
+.footer-distribucion .footer-a-la-derecha a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #0A3871;
+  background-image: url("imagenes/logo-linkedin.png");
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distribucion .footer-a-la-derecha a + a{
+    background-image: url("imagenes/GitHub-Mark-Light-32px.png");
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+}
+
+.footer-distribucion .footer-a-la-derecha a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+@media (max-width: 600px) {
+  .footer-distribucion .footer-izquierda, .footer-distribucion .footer-a-la-derecha {
+    text-align: center;
+  }
+  .footer-distribucion .footer-a-la-derecha {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distribucion .footer-izquierda p.footer-titulo {
+    line-height: 1.8;
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="imagenes/logoalura.png" alt="Logo de Alura">
+            <h1 class="titulo">Encriptador de texto</h1>
+        </header>
+
+        <main>
+            <section>
+                <textarea type = "text" class="ingreso-mensaje-a-encriptar" cols="35" rows="11" placeholder="ingrese el mensaje aquí."></textarea>
+
+                <div class="indicaciones">
+                    <img class="logo-indicaciones" src="imagenes/!.png" alt="Símbolo de indicación">
+                    <h4>Solo letras minúsculas y sin acentos</h4>
+                </div>
+
+                <div class="botones">
+                    <button class="encriptar" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <textarea class="mensaje-encriptado" cols="50" rows="31" placeholder="Ningún mensaje fue encontrado" ></textarea>
+                </div>
+
+                <div>
+                    <button id="1" class="copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-distribucion">
+			<div class="footer-a-la-derecha">
+				<a href="https://www.linkedin.com/in/lucas-gabriel-gonzalez-006735246/"></a>
+				<a href="https://github.com/mucon14"></a>
+			</div>
+
+			<div class="footer-izquierda">
+				<p class="footer-titulo">Oracle + alura 2022</p>
+                <p class="autor">Lucas Gabriel Gonzalez</p>
+			</div>
+		</footer>
+
+        <script src ="script.js"></script>
+
+    </body>
+
+</html>
